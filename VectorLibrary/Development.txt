@@ -1,0 +1,7 @@
+﻿To be able to create a 2d or 3d vector 
+
+Able to edit the vector values
+Perform dot product on vectors
+find the angle between two vectors
+find the unit vector of a given vector
+
