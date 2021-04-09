@@ -102,5 +102,28 @@ namespace VectorLibrary
 
             return returnString;
         }
+
+
+        public static Vector operator *(Vector v1, Vector v2)
+        {
+            //Check vectors are same dimension
+            AreVectorsOfSameDimension(v1.Dimension, v2.Dimension);
+
+            //Vector to return
+            Vector vectorToReturn;
+
+            //If 2D
+            if (v1.Dimension == 2)
+            {
+                vectorToReturn = new Vector((v1.DataValues[0] * v2.DataValues[1]), -(v1.DataValues[1] * v2.DataValues[0]));
+            }
+            else //If 3D
+            {
+                vectorToReturn = new Vector((v1.DataValues[1] * v2.DataValues[2] - v1.DataValues[2] * v2.DataValues[1]),
+                    (v1.DataValues[2] * v2.DataValues[0] - v1.DataValues[0] * v2.DataValues[2]), (v1.DataValues[0] * v2.DataValues[1] - v1.DataValues[1] * v2.DataValues[0]));
+            }
+
+            return vectorToReturn;
+        }
     }
 }

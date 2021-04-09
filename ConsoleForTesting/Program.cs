@@ -16,6 +16,11 @@ namespace ConsoleForTesting
 
             Console.WriteLine(Vector.FindAngleBetweenVectors(vector1, vector2));
 
+            Vector vector3 = new Vector(1, 2, 3);
+            Vector vector4 = new Vector(1, 5, 8);
+
+            Console.WriteLine((vector3 * vector4).ToString());
+
             Console.ReadKey();
         }
     }
