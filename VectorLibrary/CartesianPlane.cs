@@ -22,5 +22,10 @@ namespace VectorLibrary
         {
             return NormalVector;
         }
+
+        public override string ToString()
+        {
+            return $"({NormalVector.ReturnVectorDimension(1)}x + {NormalVector.ReturnVectorDimension(2)}y + {NormalVector.ReturnVectorDimension(3)}z)";
+        }
     }
 }
