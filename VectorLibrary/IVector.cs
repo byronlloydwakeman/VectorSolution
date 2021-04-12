@@ -8,5 +8,7 @@ namespace VectorLibrary
 {
     interface IVector
     {
+        public int ReturnDirectionVector();
+        public int ReturnPositionVector();
     }
 }
