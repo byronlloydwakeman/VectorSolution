@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VectorLibrary\VectorLibrary.csproj" />
+    <ProjectReference Include="..\VectorMath\VectorMath.csproj" />
   </ItemGroup>
 
 </Project>

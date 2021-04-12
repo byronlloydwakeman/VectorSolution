@@ -20,7 +20,7 @@ namespace VectorLibrary
 
         public Vector ReturnNormalVector()
         {
-            throw new NotImplementedException();
+            return NormalVector;
         }
 
         public override string ToString()
