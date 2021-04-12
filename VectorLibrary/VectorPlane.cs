@@ -23,8 +23,7 @@ namespace VectorLibrary
 
         public Vector ReturnNormalVector()
         {
-            throw new NotImplementedException();
-            //return DirectionVector1 * DirectionVector2;
+            return DirectionVector1 * DirectionVector2;
         }
     }
 }
