@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace VectorLibrary
 {
-    interface IVector
+    public interface IPlane
     {
-        public int ReturnDirectionVector();
-        public int ReturnPositionVector();
+        public Vector ReturnNormalVector();
     }
 }
