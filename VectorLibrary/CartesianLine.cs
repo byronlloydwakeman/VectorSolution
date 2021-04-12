@@ -29,5 +29,11 @@ namespace VectorLibrary
         {
             return PositionVector;
         }
+
+        public override string ToString()
+        {
+            return $"(x - {PositionVector.ReturnVectorDimension(1)}) / {DirectionVector.ReturnVectorDimension(1)} = (y - {PositionVector.ReturnVectorDimension(2)}) / {DirectionVector.ReturnVectorDimension(2)}" +
+                $" = (z - {PositionVector.ReturnVectorDimension(3)}) / {DirectionVector.ReturnVectorDimension(3)}";
+        }
     }
 }
