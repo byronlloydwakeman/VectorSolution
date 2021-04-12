@@ -25,5 +25,10 @@ namespace VectorLibrary
         {
             return DirectionVector1 * DirectionVector2;
         }
+
+        public override string ToString()
+        {
+            return $"r = {PositionVector} + λ{DirectionVector1} + μ{DirectionVector2}";
+        }
     }
 }
