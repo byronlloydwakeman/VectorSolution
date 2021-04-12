@@ -25,6 +25,13 @@ namespace VectorLibrary
             DataValues.Add(y);
             DataValues.Add(z);
         }
+        
+        public int ReturnVectorDimension(int axis)
+        {
+            IsIndexInRange(axis);
+
+            return DataValues[axis - 1];
+        }
 
         private void IsIndexInRange(int axis)
         {
