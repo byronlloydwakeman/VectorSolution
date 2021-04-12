@@ -6,20 +6,31 @@ using System.Threading.Tasks;
 
 namespace VectorLibrary
 {
-    class VectorLine : ILine
+    public class VectorLine : ILine
     {
         public Vector PositionVector { get; set; }
         public Vector DirectionVector { get; set; }
         private int Scalar { get; set; }
 
+        public VectorLine(Vector PositionVector, Vector DirectionVector)
+        {
+            this.PositionVector = PositionVector;
+            this.DirectionVector = DirectionVector;
+        }
+
         public Vector ReturnDirectionVector()
         {
-            throw new NotImplementedException();
+            return DirectionVector;
         }
 
         public Vector ReturnPositionVector()
         {
-            throw new NotImplementedException();
+            return PositionVector;
+        }
+
+        public override string ToString()
+        {
+            return $"r = {PositionVector} + λ{DirectionVector}";
         }
     }
 }
