@@ -93,12 +93,15 @@ namespace VectorLibrary
         public override string ToString()
         {
             string returnString = "";
-            foreach (var element in DataValues)
-            {
-                returnString += "\n" + element.ToString() ;
-            }
 
-            returnString += "\n";
+            if (Dimension == 2)
+            {
+                returnString = $"({DataValues[0]}i + {DataValues[1]}j)";
+            }
+            else
+            {
+                returnString = $"({DataValues[0]}i + {DataValues[1]}j + {DataValues[2]}k)";
+            }
 
             return returnString;
         }
