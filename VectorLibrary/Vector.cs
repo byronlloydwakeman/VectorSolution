@@ -26,11 +26,15 @@ namespace VectorLibrary
             DataValues.Add(z);
         }
         
-        public int ReturnVectorDimension(int axis)
+        public List<int> ReturnDataValues()
         {
-            IsIndexInRange(axis);
-
-            return DataValues[axis - 1];
+            //Create a new instance as lists are reference types
+            List<int> ReturnList = new List<int>();
+            foreach (var item in DataValues)
+            {
+                ReturnList.Add(item);
+            }
+            return ReturnList;
         }
 
         private void IsIndexInRange(int axis)
