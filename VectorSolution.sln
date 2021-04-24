@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorLibrary", "VectorLibr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleForTesting", "ConsoleForTesting\ConsoleForTesting.csproj", "{96F6ADE2-5DAA-4E8E-9B7B-8C95DDC60E00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorMath", "VectorMath\VectorMath.csproj", "{7E296A22-977F-479B-A9F5-8C6EFE313F61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorMathLibrary", "VectorMath\VectorMathLibrary.csproj", "{7E296A22-977F-479B-A9F5-8C6EFE313F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

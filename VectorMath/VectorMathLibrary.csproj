@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageReleaseNotes>Initial Release:
+Includes Classes:
+Angle
+Includes Methods:
+FindAngleBetweenLines
+FindAngleBetweenPlanes</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

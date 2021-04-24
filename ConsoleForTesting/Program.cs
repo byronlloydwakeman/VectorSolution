@@ -1,6 +1,6 @@
 ﻿using System;
 using VectorLibrary;
-using VectorMath;
+using VectorMathLibrary;
 
 namespace ConsoleForTesting
 {
@@ -17,10 +17,15 @@ namespace ConsoleForTesting
 
             //Console.WriteLine(Vector.FindAngleBetweenVectors(vector1, vector2));
 
-            IPlane somePlane = new ScalarPlane(new Vector(4, 4, -7), 13);
-            IPlane someOtherPlane = new ScalarPlane(new Vector(7, -4, 4), 6);
+            //IPlane somePlane = new ScalarPlane(new Vector(4, 4, -7), 13);
+            //IPlane someOtherPlane = new ScalarPlane(new Vector(7, -4, 4), 6);
 
-            Console.WriteLine(Angle.FindAngleBetweenPlanes(somePlane, someOtherPlane));
+            //Console.WriteLine(Angle.FindAngleBetweenPlanes(somePlane, someOtherPlane));
+
+            ILine line1 = new VectorLine(new Vector(0, 0, 0), new Vector(2, 3, 0));
+            ILine line2 = new VectorLine(new Vector(0, 0, 0), new Vector(3, -6, 3));
+
+            Console.WriteLine($"Angle betweenn lines {line1} and {line2} is {Angle.FindAngleBetweenLines(line1, line2)}rad or {Angle.FindAngleBetweenLines(line1, line2) * (180/Math.PI)} degrees");
 
             Console.ReadKey();
         }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VectorLibrary;
 
-namespace VectorMath
+namespace VectorMathLibrary
 {
     public static class Angle
     {
