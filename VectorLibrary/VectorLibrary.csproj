@@ -4,16 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
     <Description>A Class Library consisting of classes which can be used to perform vector operations</Description>
     <Copyright>MIT</Copyright>
-    <PackageReleaseNotes>Initial Release:
-Includes Classes :
-CartesianLine
-CartesianPlane
-ILine
-IPlane
-ScalarPlane
-Vector
-VectorLine
-VectorPlane</PackageReleaseNotes>
+    <PackageReleaseNotes>Added public ReturnDataValues method in Vector Class</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

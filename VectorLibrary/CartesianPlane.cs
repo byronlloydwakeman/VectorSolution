@@ -25,7 +25,7 @@ namespace VectorLibrary
 
         public override string ToString()
         {
-            return $"({NormalVector.ReturnVectorDimension(1)}x + {NormalVector.ReturnVectorDimension(2)}y + {NormalVector.ReturnVectorDimension(3)}z)";
+            return $"({NormalVector.ReturnDataValues()[0]}x + {NormalVector.ReturnDataValues()[1]}y + {NormalVector.ReturnDataValues()[2]}z)";
         }
     }
 }

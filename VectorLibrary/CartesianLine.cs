@@ -32,8 +32,8 @@ namespace VectorLibrary
 
         public override string ToString()
         {
-            return $"(x - {PositionVector.ReturnVectorDimension(1)}) / {DirectionVector.ReturnVectorDimension(1)} = (y - {PositionVector.ReturnVectorDimension(2)}) / {DirectionVector.ReturnVectorDimension(2)}" +
-                $" = (z - {PositionVector.ReturnVectorDimension(3)}) / {DirectionVector.ReturnVectorDimension(3)}";
+            return $"(x - {PositionVector.ReturnDataValues()[0]}) / {DirectionVector.ReturnDataValues()[0]} = (y - {PositionVector.ReturnDataValues()[1]}) / {DirectionVector.ReturnDataValues()[1]}" +
+                $" = (z - {PositionVector.ReturnDataValues()[2]}) / {DirectionVector.ReturnDataValues()[2]}";
         }
     }
 }
